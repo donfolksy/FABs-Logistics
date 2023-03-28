@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+/* service component in home page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* styling of navbar */
+
+/* styling of home page */
+.parent-service {
+  padding: 4rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent-service .text-start {
+  width: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parent-service .text-start h1 {
+  background-color: var(--lemon-color);
+  border-radius: 0 35px 35px 0;
+  color: var(--white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.services {
+  width: 90%;
+}
+
+/* why choose use styling */
+/* .sub-whychoose {
+  width: 90%;
+} */
+
+.band {
+  /* width: 30%;
+  height: 30px; */
+  position: absolute;
+  /* transform: rotate(45deg); */
+  right: 0;
+  top: 0;
+  /* bottom: 269px; */
+  /* overflow: hidden !important; */
+}
+/* testimonail styling */
+.testimonial{
+  background-color: var(--lemon-color);
+}
+.test-two{
+  background-color: var(--white);
+  color: var(--lemon-color);
+}
+
+/* styling of the sign in page */
+
+.login-body h5{
+  margin-left: 20px;
+}
+
+/* styling of pay */
+.pay-1{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid red ;
+  margin: 5px 0;
+  background-color:#D9D9D973;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pay-parent{
+  padding: 11rem 0;
 }
