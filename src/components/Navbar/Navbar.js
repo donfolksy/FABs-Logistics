@@ -32,17 +32,17 @@ function Navbar({ loggedIn }) {
       <>
         {
           <div className="dropdown">
-            <button>Get started</button>
+            <button>Help</button>
             <div className="dropdown-content">
               <Link to="/login">
-                <li>Login</li>
+                <li>whapsApp</li>
               </Link>
 
               <Link to="/customer/register">
-                <li>Customer Signup</li>
+                <li>08056439280 </li>
               </Link>
               <Link to="/restaurant/register">
-                <li>Restaurant Signup</li>
+                <li>fabslogistics@gmail.com</li>
               </Link>
             </div>
           </div>
@@ -55,19 +55,19 @@ function Navbar({ loggedIn }) {
       <div className="parent nav-parent">
         <nav>
           {/* <div className="nav-parent"> */}
-          <div
-            className="
-        "
+          <div className="logo-wrap"
           >
             <Link to="/">
+            <><h3>FABS Logistics</h3></>
               <img src={logo} alt="" />{" "}
             </Link>
+            
           </div>
 
           <div>
             <ul className="menubar">
               <li>
-                <a href="">About Us</a>
+                <a href="">Home</a>
               </li>
               <li>
                 <a href="">Login</a>
@@ -75,10 +75,10 @@ function Navbar({ loggedIn }) {
               <li>
                 <a href="">Sign up</a>
               </li>
-              <li>
-                <a href="">Contact Us</a>
-              </li>
-              {/* {data} */}
+              {/* <li>
+                <a href="">Help</a>
+              </li> */}
+              {data}
             </ul>
 
             <i onClick={handleToggle} class="fa-solid fa-bars menubaricon"></i>

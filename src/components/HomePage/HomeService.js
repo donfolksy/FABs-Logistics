@@ -2,7 +2,7 @@ import React from "react";
 import bicycle from "../../images/bicycle.png"
 import car from "../../images/car.png"
 import box from "../../images/box.png"
-import truck from "../../images/truck.png"
+// import truck from "../../images/truck.png"
 
 const HomeService = () => {
   const service = [
@@ -27,13 +27,13 @@ const HomeService = () => {
       button: "<button>PICKUP NOW</>.",
     },
     
-    {
-        icons: truck,
-        heading: "Express Delivery",
-        text: "Technology and its application are fundamental at Fabs logistics. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light..",
-        button: "<button>SEND GOODS</>.",
+    // {
+    //     icons: truck,
+    //     heading: "Express Delivery",
+    //     text: "Technology and its application are fundamental at Fabs logistics. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light..",
+    //     button: "<button>SEND GOODS</>.",
  
-      }, 
+    //   }, 
   ];
   return (
     <div className="d-flex flex-column justify-content-center w-100 parent-service ">
@@ -44,7 +44,7 @@ const HomeService = () => {
       <div className="w-100 d-flex justify-content-center">
       <div className="row justify-content-center mx-0 services">
         {service?.map(({icons, heading, text}, i) => (
-            <div className="col-lg-3 col-md-4 col-sm-6 text-center pb-3" key={i}>
+            <div className="col-lg-4 col-md-4 col-sm-6 text-center pb-3" key={i}>
                 <div className="card h-100  p-4">
                   <img src={icons} alt="" />
                     <h6>{heading}</h6>
