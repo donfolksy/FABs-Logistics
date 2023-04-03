@@ -1,0 +1,72 @@
+.HomeDelivery * {
+    font-family: Inter, Roboto, sans-serif;
+}
+
+.HomeDeliveryHeader .HeaderImage {
+    position: relative;
+    z-index: 0;
+}
+
+.HomeDeliveryHeader .HeaderImage .OverLay  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.737);
+    color: white;
+}
+
+.HomeDeliveryHeader .HeaderImage .OverLay .Content {
+    position: relative;
+    top: 25%;
+    left: 20%;
+    max-width: 65%;
+}
+
+.HomeDeliveryHeader .HeaderImage .OverLay .Content h2 {
+    font-size: 50px;
+    margin-bottom: 0px !important;
+}
+.HomeDeliveryHeader .HeaderImage .OverLay .Content p {
+    font-size: 25px;
+    color: rgba(245, 245, 245, 0.870);
+}
+
+.HomeDeliveryForm .Title {
+    font-weight: 600;
+    color: #302B2B;
+    margin: 60px 0 30px 0;
+    text-align: center;
+}
+.HomeDeliveryForm .FormLabel {
+    font-weight: 400;
+    color: #302B2B
+}
+.HomeDeliveryForm .Submit {
+    width: 100% !important;
+    background-color: #718F19;
+}
+
+/* @media only screen and (min-width: 992px) {
+    
+} */
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .HomeDeliveryHeader .HeaderImage .OverLay .Content h2 {
+        font-size: 40px;
+    }
+    .HomeDeliveryHeader .HeaderImage .OverLay .Content p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .HomeDeliveryHeader .HeaderImage .OverLay .Content h2 {
+        font-size: 20px;
+    }
+    .HomeDeliveryHeader .HeaderImage .OverLay .Content p {
+        font-size: 12px;
+    }
+}

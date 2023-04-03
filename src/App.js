@@ -6,6 +6,12 @@ import Signin from "./pages/Signin";
 import Payment from "./pages/Payment";
 import Navbar from "./components/Navbar/Navbar";
 import Transportation from "./components/Transportation";
+import HomeDelivery from "./components/pick-up/home-delivery/Index";
+import PickUpGoods from "./components/pick-up/pick-up-goods/Index";
+import Details from "./components/Details";
+import Signup from "./components/Signup";
+import Checkout from "./components/PaymentCheckout";
+import PaymentSuccessful from "./components/PaymentSuccessful"
 // import Navbar  from './components/Navbar';
 function App() {
   return (
@@ -16,10 +22,20 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/sign-in" element={<Signin />} />
+          <Route path="/sign-up" element={<Signup />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/transportation" element={<Transportation />} />
+          <Route path="/home-delivery" element={<HomeDelivery />} />
+          <Route path="/pick-up" element={<PickUpGoods />} />
 
+          <Route path="/details" element={<Details />} />
+
+          <Route path="/payment-checkout" element={<Checkout />} />
+
+          <Route path="/payment-successful" element={<PaymentSuccessful/>} />  
         </Routes>
+
+        
       </BrowserRouter>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+// import {  useNavigate } from "react-router-dom";
 import bicycle from "../../images/bicycle.png"
 import car from "../../images/car.png"
 import box from "../../images/box.png"
@@ -6,6 +7,8 @@ import { Link } from "react-router-dom";
 // import truck from "../../images/truck.png"
 
 const HomeService = () => {
+  // let navigate = useNavigate();
+
   const service = [
     {
       icons: bicycle,
@@ -55,7 +58,7 @@ const HomeService = () => {
                     <Link to={`/${link}`} className="services-btn p-2">{button}</Link>
                 </div>
             </div>
-        ))}
+        ))}  
       </div>
       </div>
     </div>
