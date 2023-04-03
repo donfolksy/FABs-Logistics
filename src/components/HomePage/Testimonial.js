@@ -17,9 +17,9 @@ const Testimonial = () => {
       <div className="sub-testimonial col-10 ">
         <div className="row mx-0">
           <div className="test-one col-lg-6">
-            <p>Client Testimonial</p>
-            <h4>More than 70+ Satistied</h4>
-            <h4>Client Testimonial</h4>
+            <p className="test-one ps-5">Client Testimonial</p>
+            <h4 className="test-one">More than 70+ Satistied</h4>
+            <h4 className="test-one">Client Testimonial</h4>
           </div>
           <div className="col-lg-6">
             {" "}

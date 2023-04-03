@@ -20,8 +20,8 @@ const Whychooseus = () => {
   return (
     <div className="w-100 d-flex justify-content-center align-items-center">
       <div className="sub-whychoose">
-        <div className="">
-          <h1>WHY CHOOSE US.</h1>
+        <div className="choose-us">
+          <h1 className="ms-5 pb-5">WHY CHOOSE US.</h1>
         </div>
         <div className="row mx-0">
           {choose?.map(({ heading, text }, i) => (
@@ -33,9 +33,9 @@ const Whychooseus = () => {
                     </div>
                 <div className="d-flex justify-conent-center">
                   <h1>0{i + 1}</h1>
-                  <p>{heading}</p>
+                  <p className="chooseUs-p ps-4 mt-3">{heading}</p>
                 </div>
-                <p>{text}</p>
+                <p className="choose-p pt-4">{text}</p>
               </div>
             </div>
           ))}
