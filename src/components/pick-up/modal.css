@@ -1,0 +1,8 @@
+.ModalTriggerBtn {
+    width: fit-content ;
+    height: 40px;
+    margin: 0;
+}
+.ModalTriggerBtn:hover {
+    color: #0d6efd;
+}

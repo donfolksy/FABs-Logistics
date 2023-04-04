@@ -2,6 +2,11 @@
     font-family: Inter, Roboto, sans-serif;
 }
 
+.PickUpGoods ::placeholder {
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.55) !important;
+}
+
 .PickUpGoodsHeader .HeaderImage {
     position: relative;
     z-index: 0;
@@ -20,7 +25,7 @@
 
 .PickUpGoodsHeader .HeaderImage .OverLay .Content {
     position: relative;
-    top: 25%;
+    top: 35%;
     left: 25%;
     max-width: 65%;
 }
@@ -41,7 +46,7 @@
     text-align: center;
 }
 .PickUpGoodsForm .FormLabel {
-    font-weight: 400;
+    font-weight: 500;
     color: #302B2B
 }
 .PickUpGoodsForm .Submit {
