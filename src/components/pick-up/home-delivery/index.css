@@ -2,6 +2,11 @@
     font-family: Inter, Roboto, sans-serif;
 }
 
+.HomeDelivery ::placeholder {
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.55) !important;
+}
+
 .HomeDeliveryHeader .HeaderImage {
     position: relative;
     z-index: 0;
@@ -20,7 +25,7 @@
 
 .HomeDeliveryHeader .HeaderImage .OverLay .Content {
     position: relative;
-    top: 25%;
+    top: 35%;
     left: 20%;
     max-width: 65%;
 }
@@ -41,7 +46,7 @@
     text-align: center;
 }
 .HomeDeliveryForm .FormLabel {
-    font-weight: 400;
+    font-weight: 500;
     color: #302B2B
 }
 .HomeDeliveryForm .Submit {
