@@ -23,7 +23,7 @@ const HomeService = () => {
       heading: "Transportation Services",
       text: "Technology and its application are fundamental at GIGL. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light.",
       button: "HIRE A CAR",
-      link: "hire"
+      link: "transportation"
     },
 
     {
