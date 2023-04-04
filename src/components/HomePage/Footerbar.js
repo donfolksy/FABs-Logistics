@@ -4,8 +4,8 @@ import {FaTwitter} from "react-icons/fa"
 import {AiFillLinkedin} from "react-icons/ai"
 const Footerbar = ()=> {
     return(
-        <div className=" footerbar mx-0 mt-5 w-100  row justify-content-between  p-4 col-lg-11">
-          <div className="col-lg-3 col-md-6">
+        <div className=" footerbar mx-0 mt-5 w-100  row justify-content-between  p-5 ms-5 col-lg-11">
+          <div className="  col-lg-3 col-md-6">
             <h5 className="">© 2023 FABS Logistics</h5>
           </div>
           <div className="col-lg-3 col-md-6">
