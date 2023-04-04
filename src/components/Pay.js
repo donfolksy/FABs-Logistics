@@ -20,7 +20,7 @@ const Pay = () => {
               <p>Paypal</p> <img src={paypal}></img>
             </div>
             <h5 className="mt-4 mb-4">Total Payment :</h5>
-            <button className="btn border w-100">Proceed for Checkout >
+            <button className="btn border w-100">{'Proceed for Checkout >'}
             </button>
           </div>
         </div>
