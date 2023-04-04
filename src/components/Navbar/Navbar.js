@@ -113,7 +113,7 @@ function Navbar({ loggedIn }) {
         </a>
         <Link to="/">Home</Link>{" "}
         <Link to="/sign-in">Login</Link>
-        <Link to="">Sign up</Link>
+        <Link to="/sign-up">Sign up</Link>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@
 }
 .hero p{
   font-family: inter;
-  font-size: 8px;
+  font-size: 10px;
   max-width: 50%;
 }
 .herosection p{
@@ -43,6 +43,8 @@
   background-color: var(--lemon-color);
   color: var(--white);
   border-radius: 5px;
+  padding: 2px;
+  border: none;
 }
 @media screen and (max-width: 992px) {
   .herosection h3{
@@ -73,6 +75,7 @@
   background-color: var(--lemon-color);
   border-radius: 0 35px 35px 0;
   color: var(--white);
+  min-width: 200px;
 }
 .services {
   width: 90%;
@@ -143,11 +146,17 @@ color: var(--white);
 .update-form{
   border-radius: 2px;
   border: 1px solid white;
+  padding: 9px;
 }
 .update-form button{
   background-color: var(--lemon-color);
   color: var(--white);
   font-family: inter;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+min-width: 200px;
 }
 .update-form input::placeholder{
   color: var(--white);
@@ -156,11 +165,14 @@ color: var(--white);
 .update-form input{
   background: transparent;
   color: var(--white);
+  outline: none;
+  border: none;
 }
 
 /* styling of footer bar */
 .footerbar{
   font-family: inter;
+  /* padding-left: 50px; */
 }
 /* styling of the sign in page */
 /*  */
@@ -1120,7 +1132,7 @@ select {
     height: 90px;
   }
 
-  .cards {
+  .purpose-cont {
     padding: 50px 20px;
   }
 
@@ -1148,11 +1160,44 @@ select {
   .itb {
     width: 100%;
   }
+  
+}
+
+@media (max-width:1900px) {
+  .herosection {
+    background-size: cover ;
+  }
+  .herosection {
+    background-color: currentColor ;
+  }
+}
+
+@media (max-width:1000px) {
+  .herosection {
+    background-size: inherit ;
+  }
+  .herosection {
+    background-color: currentColor ;
+  }
 }
 
 
+@media (max-width:990px) {
+  .herosection {
+    background-size: inherit ;
+  }
+  .herosection {
+    background-color: currentColor ;
+  }
+}
+
 
 @media (max-width:610px) {
+  @media (max-width:990px) {
+    .herosection {
+      background-color: currentColor ;
+    }
+  }
   .card-cont {
     gap: 2rem;
     justify-content: space-between;
@@ -1160,14 +1205,14 @@ select {
     flex-direction: column;
   }
 
-  .cards {
+  .purpose-cont {
     gap: 4rem;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
 
-  .card {
+  .purpose {
     font-size: 1.5rem;
     width: 80%;
     border-right: none;
@@ -1369,7 +1414,7 @@ select {
     width: 20%;
   }
 
-  .card {
+  .purpose {
     width: 100%;
   }
 
@@ -1590,8 +1635,8 @@ select {
   button {
     color: #fff;
     background-color: #718f19;
-    width: 383px;
-    height: 64px;
+    width: 103px;
+    height: 34px;
     border: 1px solid #718f19;
     font-size: 26px;
     font-weight: 700;
@@ -1638,8 +1683,8 @@ select {
   button {
     color: #fff;
     background-color: #718f19;
-    width: 350px;
-    height: 64px;
+    width: 103px;
+    height: 34px;
     border: 1px solid #718f19;
     font-size: 26px;
     font-weight: 700;
@@ -1658,8 +1703,8 @@ select {
   button {
     color: #fff;
     background-color: #718f19;
-    width: 241px;
-    height: 64px;
+    width: 103px;
+    height: 34px;
     border: 1px solid #718f19;
     font-size: 26px;
     font-weight: 700;
@@ -1708,8 +1753,8 @@ select {
   button {
     color: #fff;
     background-color: #718f19;
-    width: 167px;
-    height: 64px;
+    width: 103px;
+    height: 34px;
     border: 1px solid #718f19;
     font-size: 20px;
     font-weight: 700;
@@ -1750,8 +1795,8 @@ select {
   button {
     color: #fff;
     background-color: #718f19;
-    width: 127px;
-    height: 51px;
+    width: 103px;
+    height: 34px;
     border: 1px solid #718f19;
     font-size: 18px;
     font-weight: 700;
@@ -2229,5 +2274,11 @@ select {
       line-height: 20px;
       padding-top: 17px;
       width: 100%;
+  }
+  .update-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

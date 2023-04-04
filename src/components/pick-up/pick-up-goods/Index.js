@@ -18,7 +18,7 @@ export default function PickUpGoods() {
             <Row className="PickUpGoodsHeader justify-content-center">
                 <div className='HeaderImage'>
 
-                    <Image fluid src={HeaderImage} />
+                    {/* <Image fluid src={HeaderImage} /> */}
                     <div className='OverLay'>
                         <div className='Content'>
                             <h2>Pick Up Goods</h2>

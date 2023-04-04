@@ -19,7 +19,7 @@ export default function HomeDelivery() {
             <Row className="HomeDeliveryHeader justify-content-center">
                 <div className='HeaderImage'>
 
-                    <Image fluid src={HeaderImage} />
+                    {/* <Image className='img-cont' fluid src={HeaderImage} /> */}
                     <div className='OverLay'>
                         <div className='Content'>
                             <h2>Home Delivery</h2>

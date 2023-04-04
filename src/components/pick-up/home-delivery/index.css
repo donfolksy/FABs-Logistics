@@ -8,26 +8,57 @@
 }
 
 .HomeDeliveryHeader .HeaderImage {
-    position: relative;
-    z-index: 0;
+    /* position: relative; */
+    /* z-index: 0; */
 }
 
+.HomeDeliveryHeader {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.OverLay {
+    width: 50%;
+}
+.HeaderImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+.HomeDelivery {
+    width: 100%;
+}
+.HomeDeliveryForm {
+    width: 100%;
+}
+.row {
+    /* margin: 0; */
+}
 .HomeDeliveryHeader .HeaderImage .OverLay  {
-    position: absolute;
-    top: 0;
+    /* position: absolute; */
+    /* top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.737);
+    z-index: 1; */
+    /* background-color: rgba(0, 0, 0, 0.737); */
     color: white;
 }
 
+.HomeDeliveryHeader .HeaderImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.737),rgba(0, 0, 0, 0.737)), url(../assets/home-delivery.svg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover  ;
+}
 .HomeDeliveryHeader .HeaderImage .OverLay .Content {
-    position: relative;
+    /* position: relative;
     top: 35%;
     left: 20%;
-    max-width: 65%;
+    max-width: 65%; */
 }
 
 .HomeDeliveryHeader .HeaderImage .OverLay .Content h2 {

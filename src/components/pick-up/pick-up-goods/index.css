@@ -7,26 +7,45 @@
     color: rgba(128, 128, 128, 0.55) !important;
 }
 
+.PickUpGoodsHeader {
+    width: 100%;
+    margin: 0 !important;
+}
 .PickUpGoodsHeader .HeaderImage {
-    position: relative;
-    z-index: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.737),rgba(0, 0, 0, 0.737)), url(../assets/pick-up-goods.svg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover  ;
+}
+
+.PickUpGoodsHeader .HeaderImage .OverLay{
+    width: 60%;
+}
+
+.PickUpGoodsHeader .HeaderImage .OverLay .Content {
+    padding-bottom: 60px;
+
+}
+.PickUpGoodsHeader .HeaderImage {
+    /* position: relative;
+    z-index: 0; */
 }
 
 .PickUpGoodsHeader .HeaderImage .OverLay  {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.737);
+    z-index: 1; */
+    /* background-color: rgba(0, 0, 0, 0.737); */
     color: white;
 }
 
 .PickUpGoodsHeader .HeaderImage .OverLay .Content {
-    position: relative;
+    /* position: relative;
     top: 35%;
-    left: 25%;
+    left: 25%; */
     max-width: 65%;
 }
 
