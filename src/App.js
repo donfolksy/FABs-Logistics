@@ -12,6 +12,9 @@ import Details from "./components/Details";
 import Signup from "./components/Signup";
 import Checkout from "./components/PaymentCheckout";
 import PaymentSuccessful from "./components/PaymentSuccessful"
+import BookNow from "./components/BookNow";
+import BankSummary from "./components/BankSummary";
+
 // import Navbar  from './components/Navbar';
 function App() {
   return (
@@ -27,12 +30,16 @@ function App() {
           <Route path="/transportation" element={<Transportation />} />
           <Route path="/home-delivery" element={<HomeDelivery />} />
           <Route path="/pick-up" element={<PickUpGoods />} />
+          <Route path="/book-now" element={<BookNow />} />
 
           <Route path="/details" element={<Details />} />
 
           <Route path="/payment-checkout" element={<Checkout />} />
 
           <Route path="/payment-successful" element={<PaymentSuccessful/>} />  
+
+          <Route path="/bank-summary" element={<BankSummary/>} /> 
+
         </Routes>
 
         

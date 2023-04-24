@@ -10,7 +10,7 @@ function Navbar({ loggedIn }) {
 
   useEffect(() => {
     if (toggle === true) {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "100%";
     } else {
       document.getElementById("mySidenav").style.width = "0px";
     }
@@ -74,7 +74,8 @@ function Navbar({ loggedIn }) {
           {/* <div className="nav-parent"> */}
           <div className="logo-wrap">
             <Link to="/" className="d-flex">
-              <img src={logo} alt="" /> <h3 className="ms-4">FABS Logistics</h3>
+              <img src={logo} alt="" />
+               <h3 className="ms-3">FABS Logistics</h3>
             </Link>
           </div>
 

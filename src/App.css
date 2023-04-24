@@ -174,14 +174,20 @@ min-width: 200px;
   font-family: inter;
   /* padding-left: 50px; */
 }
+.footerbar a{
+  text-decoration: none;
+  color: var(--black);
+}
 /* styling of the sign in page */
 /*  */
 .login-body h5{
   margin-left: 20px;
 }
-.login-parent span{
+.login-parent a{
   color: var(--lemon-color);
   padding-left: 5px;
+  text-decoration: none;
+
 }
 .login-parent button{
   background-color: var(--lemon-color);
@@ -2281,4 +2287,22 @@ select {
     align-items: center;
     justify-content: center;
   }
+}
+/* styling of book now */
+.booknow{
+  background-image: url(./images/booknow.png);
+  min-height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.booknow h3{
+  color: white;
+  width: 400px;
+  font-family: inter;
+}
+.booknow-butt {
+  background-color: var(--lemon-color) !important;
+  color: var(--white) !important;
 }

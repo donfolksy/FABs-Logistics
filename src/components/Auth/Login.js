@@ -16,7 +16,7 @@ const Login = () => {
         
         {/* <input type="button" value="Login" className="form-control mt-5"/> */}
         <button className="w-100 mt-4 p-1">Login</button>
-        <h6 className="d-flex justify-content-center pt-2">Don’t have an account? <span>Sign Up.</span> </h6>
+        <h6 className="d-flex justify-content-center pt-2">Don’t have an account? <a href="/sign-up"> Sign up</a> </h6>
   
         </form>
       </div>
