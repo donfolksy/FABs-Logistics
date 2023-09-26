@@ -13,7 +13,7 @@ const HomeService = () => {
     {
       icons: bicycle,
       heading: "Book a company representative",
-      text: "Technology and its application are fundamental at GIGL. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light.",
+      text: "At FABs Logistics, technology is more than a tool-it's the core of our operations. W e recognise its pivotal role in ensuring an unparalleled customer journey. To this end, our processes, solutions and services are meticulously crafted around cutting-edge technology. This enables us to provide you with cost-effective, secure and lightning-fast shipment deliveries, exemplifying our commitment to excellence.",
       button: "Book Now",
       link: "book-now"
     },
@@ -21,7 +21,7 @@ const HomeService = () => {
     {
       icons: car,
       heading: "Transportation Services",
-      text: "Technology and its application are fundamental at GIGL. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light.",
+      text: "Embracing innovation is a cornerstone of our transport services. At FABs logistics, we grasp the pivotal role technology plays in enhancing the transport experience. Thus, we've seamlessly intergrated modern technology into our operations. From streamlined booking processes to real-time tracking, our solutions ensure your cargo arrives swiftly,securely and with optimal efficiency. Elevate your transport experience with us and witness the power of technology in motion.",
       button: "HIRE A CAR",
       link: "transportation"
     },
@@ -29,7 +29,7 @@ const HomeService = () => {
     {
       icons: box,
       heading: "Pickup an Item",
-      text: "Technology and its application are fundamental at GIGL. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light.",
+      text: "Simplify your logistics experience wit us. Choose between two hassle-free options: opt for home delivery or conveniently pick up your items at our nearest office. We understand your preferences and our flexible approach ensures your convenience. Whether it's doorstep delivery or a quick visit to out nearby office, we've got you covered. The choice is yours, and your satisfsction is our priority.",
       button:  null,
       modal: <PickUpModal />
     },
@@ -45,7 +45,7 @@ const HomeService = () => {
   return (
     <div className="d-flex flex-column justify-content-center w-100 parent-service ">
       <div className="text-start mb-5">
-        <h1 className="p-2">OUR SERVICES</h1>
+        <h1 className="p-2" id="change">OUR SERVICES</h1>
       </div>
 
       <div className="w-100 d-flex justify-content-center ">

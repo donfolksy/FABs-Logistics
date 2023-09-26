@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import './index.css'
 import HeaderImage from '../assets/pick-up-goods.svg'
+import { Link } from 'react-router-dom';
 
 export default function PickUpGoods() {
 
@@ -14,6 +15,8 @@ export default function PickUpGoods() {
     }
 
     return (
+       
+
         <div className='PickUpGoods'>
             <Row className="PickUpGoodsHeader justify-content-center">
                 <div className='HeaderImage'>
@@ -30,6 +33,7 @@ export default function PickUpGoods() {
                 </div>
             </Row>
 
+            <div className="container">
             <Row className="PickUpGoodsForm justify-content-center">
                 <h4 className='Title'>Choose Your Nearest Office</h4>
                 <Col xs="11" md="7" lg="6" className='mb-5 pb-5'>
@@ -53,17 +57,21 @@ export default function PickUpGoods() {
                             </Form.Select>
                         </Form.Group>
 
+                        
+
                         <Form.Group className="mb-4">
                             <Form.Label className="FormLabel">Name of Item</Form.Label>
                             <Form.Control type="text" name="item_name" placeholder="Next-Level Director Office Table" />
                         </Form.Group>
-
+                        
+                        
                         <Button className="Submit mt-4" variant="primary" type="submit">
-                            Proceed
+                           <a href="/payment">Proceed</a>
                         </Button>
                     </Form>
                 </Col>
             </Row>
+        </div>
         </div>
     )
 }

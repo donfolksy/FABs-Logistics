@@ -14,7 +14,8 @@ import Checkout from "./components/PaymentCheckout";
 import PaymentSuccessful from "./components/PaymentSuccessful"
 import BookNow from "./components/BookNow";
 import BankSummary from "./components/BankSummary";
-
+import Paypal from "./components/Paypal";
+import Books from "./components/Books";
 // import Navbar  from './components/Navbar';
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
           <Route path="/payment-successful" element={<PaymentSuccessful/>} />  
 
           <Route path="/bank-summary" element={<BankSummary/>} /> 
+          <Route path="/paypal" element={<Paypal/>} /> 
+          <Route exact path="/books" component={Books} />
 
         </Routes>
 

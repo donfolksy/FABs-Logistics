@@ -1,0 +1,347 @@
+.paypal-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.paypal-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.paypal-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+.paypal-5{
+    width: 100%;
+}
+.pay-start{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pay-start p{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.pay-start img{
+    width: 30px;
+    padding-bottom: 15px;
+}
+.pay-start-1{
+    padding-top: 3rem;
+}
+.pay-start-1 label{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pay-start-1 input{
+    border-radius: 10px;
+    border: 1px solid #302B2B;
+    background: #FFF;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 20px;
+}
+.pay-start-1 input::placeholder{
+    color: #D9D9D9;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    padding: 0;
+    line-height: normal;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.expiry input{
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    width: 78.6px;
+    height: 50px;
+}
+#two{
+    margin-left: 50px;
+    text-align: center;
+}
+
+.expiry{
+    display: flex;
+    align-items: center;
+}
+.expiry-3{
+    padding-left: 350px;
+}
+.expiry-3 label{
+    text-align: center;
+    padding-left: 1rem;
+}
+.expiry-3 input{
+    width: 90.067px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    height: 50px;
+}
+.rem h1{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.rem{
+    padding-top: 2rem;
+}
+.rem p{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 1rem;
+}
+.rem h2{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 3rem;
+}
+.rem button{
+    width: 500.867px;
+    padding: 20px 20px;
+    background: rgba(113, 143, 25, 0.85);
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 1px solid rgba(113, 143, 25, 0.85);
+    border-radius: 10px;
+    height: 70px;
+}
+@media(max-width:1322px){
+    .expiry-3 {
+        padding-left: 272px;
+    }
+}
+@media(max-width:1166px){
+    .expiry-3 {
+        padding-left: 170px;
+    }
+}
+@media(max-width:953px){
+    .expiry-3 {
+        padding-left: 90px;
+    }
+    .paypal-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 77%;
+    }
+}
+@media (max-width:674px){
+    .pay-start p {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .rem button {
+        width: 100%;
+        padding: 20px 20px;
+        background: rgba(113, 143, 25, 0.85);
+        color: #FFF;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        outline: none;
+        border: 1px solid rgba(113, 143, 25, 0.85);
+        border-radius: 10px;
+        height: 70px;
+    }
+    .expiry-3 {
+        padding-left: 64px;
+    }
+}
+@media (max-width:545px){
+    .rem p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 1rem;
+    }
+    .pay-start p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #two {
+        margin-left: 23px;
+        text-align: center;
+    }
+    .pay-start-1 label {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .rem h1 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+@media (max-width:455px){
+    .expiry-3 {
+        padding-left: 20px;
+    }
+    .rem h1 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+@media (max-width:399px){
+    .expiry-3 {
+        padding-left: 73px;
+    }
+    .rem h1 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .paypal-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 83%;
+    }
+    .rem p {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 1rem;
+    }
+    .rem h2 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 3rem;
+    }
+    #two {
+        margin-left: 10px;
+        text-align: center;
+    }
+    .pay-start {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:378px){
+    .pay-start p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .pay-start-1 label {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .expiry input {
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: #FFF;
+        width: 60.6px;
+        height: 50px;
+    }
+    .expiry-3 input {
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: #FFF;
+        width: 60.6px;
+        height: 50px;
+    }
+    .expiry input::placeholder{
+        color: #D9D9D9;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        padding-right: 20px;
+        line-height: normal;
+    }
+    .rem h1 {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .rem h2 {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 3rem;
+    }
+    .rem button {
+        width: 100%;
+        padding: 20px 20px;
+        background: rgba(113, 143, 25, 0.85);
+        color: #FFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        outline: none;
+        border: 1px solid rgba(113, 143, 25, 0.85);
+        border-radius: 10px;
+        height: 70px;
+    }
+    .rem p {
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 1rem;
+    }
+    .expiry-3 {
+        padding-left: 43px;
+    }
+}

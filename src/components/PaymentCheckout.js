@@ -36,15 +36,17 @@ const Checkout = () => {
                                 <h6>Remember this card for the next time.</h6>
                                 <p>We care a lot about your privacy. That’s why we do not keep any of your information unless you ask for it.</p>
                             </div>
-
+                            
                             <div className="word-2">
                                 <h2>
                                     Total Payment:
                                 </h2>
                             </div>
+                            <a href="/payment-successful">
                             <div className="last-2">
                                 <button type="button" value="Pay" id="button">Pay</button>
                             </div>
+                            </a>
                         </div>
                     </form>
                 </div>

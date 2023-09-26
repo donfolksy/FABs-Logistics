@@ -72,6 +72,13 @@
     width: 100% !important;
     background-color: #718F19;
 }
+#change{
+    font-size: 20px;
+}
+.Submit a{
+    color: black;
+    text-decoration:none ;
+}
 
 /* @media only screen and (min-width: 992px) {
     

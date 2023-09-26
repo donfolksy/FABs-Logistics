@@ -203,13 +203,22 @@ min-width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 0;
+  margin: 35px 0;
   background-color:#D9D9D973;
   border-radius: 5px;
   font-family: inter;
+  padding: 10px;
+  border: 1px solid #718f19;
+}
+.pay-1 p{
+  margin-bottom: 0;
 }
 .pay-parent{
   padding: 6rem 0;
+}
+.payment-style a{
+  text-decoration: none;
+  color: #000;
 }
 .pay-parent button{
   background-color: var(--lemon-color);
@@ -308,6 +317,24 @@ header {
   line-height: 50px;
   padding-bottom: 15px;
 }
+
+
+select {
+  color: green; /* Change the text color to green */
+  background-color: transparent; /* Keep the background transparent */
+  border: 1px solid green; /* Add a green border */
+  padding: 5px; /* Add some padding for better appearance */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+}
+
+/* Style the option elements */
+select option {
+  background-color: white; /* Set background color for options */
+  color: black; /* Set text color for options */
+}
+
+
 
 
 
@@ -684,8 +711,8 @@ table {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  padding-top: 200px;
-
+  padding-top: 90px;
+  height: auto;
 }
 
 
@@ -695,17 +722,31 @@ table {
 
 .input-cont {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  width: 40%;
-  min-width: 400px;
+  width: 88%;
+  /* min-width: 400px; */
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.nav-link:not(.active) {
+  color: #718f19 !important; /* Set the color you want */
+}
+
+
+.nav-link.active {
+  background-color: green;
+  color: white;
+}
+
+/* .tabs input{
+  width: 100%;
+} */
 
 
 
@@ -824,7 +865,7 @@ table {
   border: none;
   outline: none;
   color: var(--light);
-  width: 70%;
+  width: 50%;
 
 }
 
@@ -968,19 +1009,31 @@ ul li {
 
 .state,
 .city {
-  width: 50%;
+  width: 100%;
+}
+
+.state option select {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+}
+
+.rub{
+  width: 100%;
+  padding-left: 20px;
 }
 
 .state select,
-.city select {
-  width: 100%;
+.city input {
+  width: 93%;
   height: 40px;
+  border-radius: 5px;
 }
 
-.first-section input,
+/* .first-section input,
 select {
   border: 1px solid var(--dark);
-}
+} */
 
 .address {
   padding-bottom: 20px;
@@ -1073,6 +1126,10 @@ select {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+#file-input input{
+  width: 100%;
 }
 
 
@@ -1393,7 +1450,7 @@ select {
 
 
 
-@media (max-width:410px) {
+@media (max-width:426px) {
   header {
     padding: 80px 18px;
   }
@@ -1405,6 +1462,12 @@ select {
 
   .text-input {
     font-size: 1rem;
+  }
+  .text-input h1{
+    font-size: 20px;
+  }
+  .text-input p{
+    font-size: 15px;
   }
 
   .first-li {
@@ -2049,6 +2112,7 @@ select {
   }
 }
 
+
 @media (max-width: 732px) {
   .conts-cont {
       padding: 0px 1rem;
@@ -2112,10 +2176,15 @@ select {
   }
 }
 
+
+
+
 @media (max-width: 532px) {
   .conts-2-1 {
       padding-top: 11px;
   }
+
+  
 
   .conts-2 input,
   .conts-2-1 input,

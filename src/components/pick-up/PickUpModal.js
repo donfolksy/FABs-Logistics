@@ -28,11 +28,11 @@ export default function Example() {
                     <Modal.Title>Delivery Options</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Please Select your prefered mode of delivery for your item(s)
+                    Please Select your preferred mode of delivery for your item(s)
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={() => navigate('/home-delivery')} variant="secondary">
-                        Home  Delivery
+                        Home Delivery
                     </Button>
                     <Button onClick={() => navigate('/pick-up')} variant="primary">
                         Nearest Office
@@ -42,5 +42,3 @@ export default function Example() {
         </>
     );
 }
-
-// render(<Example />);

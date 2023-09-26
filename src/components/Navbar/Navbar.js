@@ -1,10 +1,11 @@
 import logo from "../../images/logo.png";
 import "./Navbar.css";
 import React, { useState, useEffect } from "react";
-import { Link, link } from "react-router-dom";
-import {BsWhatsapp} from "react-icons/bs";
-import {BsFillTelephoneFill} from "react-icons/bs";
-import {HiOutlineMail} from "react-icons/hi";
+import { Link } from "react-router-dom";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
+
 function Navbar({ loggedIn }) {
   const [toggle, setToggle] = useState(false);
 
@@ -18,6 +19,11 @@ function Navbar({ loggedIn }) {
 
   const handleToggle = () => {
     setToggle(!toggle);
+  };
+
+  const handleLinkClick = () => {
+   
+    setToggle(false);
   };
 
   let data;
@@ -51,14 +57,14 @@ function Navbar({ loggedIn }) {
                 style={{ margin: "0 0 0 -5rem", zIndex: "50" }}
               >
                 <a href="https://wa.me/+2348104941162" target={"_blank"}>
-                  <li><BsWhatsapp/>WhatsApp</li>
+                  <li><BsWhatsapp />WhatsApp</li>
                 </a>
 
                 <a href="tel: +234 810 795 1217">
-                  <li><BsFillTelephoneFill/>08056439280 </li>
+                  <li><BsFillTelephoneFill />08056439280 </li>
                 </a>
                 <a href="mailto: fabslogistics@gmail.com">
-                  <li><HiOutlineMail/>fabslogistics@gmail.com</li>
+                  <li><HiOutlineMail />fabslogistics@gmail.com</li>
                 </a>
               </div>
             </div>
@@ -67,56 +73,51 @@ function Navbar({ loggedIn }) {
       </>
     );
   }
+
   return (
     <div>
       <div className="parent nav-parent">
         <nav>
-          {/* <div className="nav-parent"> */}
           <div className="logo-wrap">
             <Link to="/" className="d-flex">
               <img src={logo} alt="" />
-               <h3 className="ms-3">FABS Logistics</h3>
+              <h3 className="ms-3" id="move">FABS Logistics</h3>
             </Link>
           </div>
 
           <div>
             <ul className="menubar">
               <li>
-                <Link to="/">Home</Link>{" "}
+                <Link onClick={handleLinkClick} to="/">Home</Link>{" "}
               </li>
               <li>
-                <Link to="/sign-in">Login</Link>{" "}
+                <Link onClick={handleLinkClick} to="/sign-in">Login</Link>{" "}
               </li>
               <li>
-                <Link to="/sign-up">Sign up</Link>{" "}
+                <Link onClick={handleLinkClick} to="/sign-up">Sign up</Link>{" "}
               </li>
-              {/* <li>
-                <a href="">Help</a>
-              </li> */}
               {data}
             </ul>
 
-            <i onClick={handleToggle} class="fa-solid fa-bars menubaricon"></i>
+            <i onClick={handleToggle} className="fa-solid fa-bars menubaricon"></i>
           </div>
-
-          {/* </div> */}
         </nav>
       </div>
 
-      <div id="mySidenav" class="sidenav">
+      <div id="mySidenav" className="sidenav">
         <a
           onClick={handleToggle}
           href="javascript:void(0)"
-          class="closebtn"
-          onclick="closeNav()"
+          className="closebtn"
         >
           &times;
         </a>
-        <Link to="/">Home</Link>{" "}
-        <Link to="/sign-in">Login</Link>
-        <Link to="/sign-up">Sign up</Link>
+        <Link onClick={handleLinkClick} to="/">Home</Link>{" "}
+        <Link onClick={handleLinkClick} to="/sign-in">Login</Link>
+        <Link onClick={handleLinkClick} to="/sign-up">Sign up</Link>
       </div>
     </div>
   );
 }
+
 export default Navbar;

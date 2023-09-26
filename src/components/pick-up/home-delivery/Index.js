@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import './index.css'
 import HeaderImage from '../assets/home-delivery.svg'
+import { Link } from 'react-router-dom';
 
 export default function HomeDelivery() {
     // const [formData, setFormData] = useState({})
@@ -51,9 +52,26 @@ export default function HomeDelivery() {
                         </Form.Group>
 
                         <Form.Group className="mb-4">
-                            <Form.Label className="FormLabel">Name of Item</Form.Label>
-                            <Form.Control type="text" name="item_name" placeholder="Next-Level Director Office Table" />
+                            <Form.Label className="FormLabel">State</Form.Label>
+                            <Form.Control type="name" name="State" placeholder="State" />
                         </Form.Group>
+
+                        <Form.Group className="mb-4">
+                            <Form.Label className="FormLabel">City</Form.Label>
+                            <Form.Control type="name" name="City" placeholder="City" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-4">
+                            <Form.Label className="FormLabel">Name of Item</Form.Label>
+                            <Form.Control type="text" name="item_name" placeholder="Name of Item" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-4">
+                            <Form.Label className="FormLabel">Tracking-ID</Form.Label>
+                            <Form.Control type="text" name="item_name" placeholder="Tracking-ID" />
+                        </Form.Group>
+                        
+
 
                         <Form.Label className="FormLabel">Amount For Pickup/Delivery</Form.Label>
                         <InputGroup className="mb-4">
@@ -63,7 +81,7 @@ export default function HomeDelivery() {
                         </InputGroup>
 
                         <Button className="Submit mt-4" variant="primary" type="submit">
-                            Proceed
+                        <a href="/payment">Proceed</a>
                         </Button>
                     </Form>
                 </Col>

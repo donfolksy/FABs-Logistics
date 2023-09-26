@@ -50,6 +50,10 @@ const BookNow = () => {
                         <input className="mb-4 form-control form-control-lg" type="text"></input>
                         <p className="mb-1">Phone Number</p>
                         <input className="mb-4 form-control form-control-lg" type="text"></input>
+                        <p className="mb-1">State</p>
+                        <input className="mb-4 form-control form-control-lg" type="text"></input>
+                        <p className="mb-1">City</p>
+                        <input className="mb-4 form-control form-control-lg" type="text"></input>
                         <p className="mb-1">Address</p>
                         <input className=" mb-4 form-control form-control-lg" type="text"></input>
                         <p className="mb-1">Name of Item(s)</p>

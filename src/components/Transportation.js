@@ -18,9 +18,23 @@ import Group6 from "../images/Group-new-6.png";
 import iconone from "../images/Vector (3).png";
 import icontwo from "../images/Vector (1).png";
 import iconthree from "../images/Vector (2).png";
-// import Navbar from "./Navbar";
+import Books from "./Books";
+import Tabs from "./Tabs";
+
 
 const Transportation = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [activeTab, setActiveTab] = useState("bookSeat");
+  const [activeSubTab, setActiveSubTab] = useState("oneRide"); // Initialize activeSubTab with a default value
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     // html document goes here
     <div>
@@ -138,7 +152,7 @@ const Transportation = () => {
           </div>
           <div className="rate-star">
             <p>
-              <span className="green cash">$2500</span>/ pre hour
+            <span className="green cash">$500</span>/ pre day
             </p>
             <div className="five-star">
               <img className="img-2" src={star3} alt="Image" />
@@ -149,7 +163,8 @@ const Transportation = () => {
             </div>
           </div>
 
-          <button className="btn">Book Now</button>
+          <button className="btn" onClick={openModal}>Book Now</button>
+          <Books isOpen={showModal} onClose={closeModal} />
         </div>
         <div className="transit">
           <div className="car-img">
@@ -178,7 +193,7 @@ const Transportation = () => {
           </div>
           <div className="rate-star">
             <p>
-              <span className="green cash">$2500</span>/ pre hour
+            <span className="green cash">$500</span>/ pre day
             </p>
             <div className="five-star">
               <img className="img-2" src={star3} alt="Image" />
@@ -189,7 +204,7 @@ const Transportation = () => {
             </div>
           </div>
 
-          <button className="btn">Book Now</button>
+          <button className="btn" onClick={openModal}>Book Now</button>
         </div>
         <div className="transit">
           <div className="car-img">
@@ -218,7 +233,7 @@ const Transportation = () => {
           </div>
           <div className="rate-star">
             <p>
-              <span className="green cash">$2500</span>/ pre hour
+              <span className="green cash">$500</span>/ pre day
             </p>
             <div className="five-star">
               <img className="img-2" src={star3} alt="Image" />
@@ -229,7 +244,7 @@ const Transportation = () => {
             </div>
           </div>
 
-          <button className=" btn">Book Now</button>
+          <button className="btn" onClick={openModal}>Book Now</button>
         </div>
       </div>
       <div className="chat-cont">
@@ -296,26 +311,11 @@ const Transportation = () => {
           </div>
         </div>
       </div>
-      <div className="empty-input">
-        <div className="empty"></div>
+      <div className="empty-input" >
         <div className="input-cont">
-          <div className="hire">
-            <p>Book a Seat</p>
-            <p>Hire a Bus</p>
-            <p>Booking Stat</p>
-          </div>
-          <div className="input-sec">
-            <input></input>
-            <input></input>
-            <input></input>
-            <input></input>
-            <div className="flex-input">
-              <input></input>
-              <input></input>
-            </div>
-            <button>Reserve Now</button>
-          </div>
+            <Tabs/>
         </div>
+
       </div>
       <div className="footer-div">
         <div className="footer-1">

@@ -5,18 +5,20 @@ import {AiFillLinkedin} from "react-icons/ai"
 import { Link, link } from "react-router-dom";
 const Footerbar = ()=> {
     return(
-        <div className=" footerbar mx-0 mt-5 w-100 row justify-content-between  p-5  col-lg-11">
+        <div className=" footerbar mx-0 mt-1 w-100 row justify-content-between  p-5  col-lg-11">
           <div className="  col-lg-3 col-md-6">
-            <h5 className="ms-5">© 2023 FABS Logistics</h5>
+            <h5 className="ms-1">© 2023 FABS Logistics</h5>
           </div>
           <div className="col-lg-3 col-md-6">
           <h5 className="">Company</h5>
+          <div className="ul-1">
           <ul className=" p-3">
           <li>Service Portfolio</li>
           <li>About us</li>
           <li>Blog</li>
           <li>Terms and Conditions</li>
           </ul>
+          </div>
           </div>
           <div className="col-lg-3 col-md-6">
           <h5 className="">Other Services</h5>

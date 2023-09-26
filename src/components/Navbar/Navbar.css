@@ -1,6 +1,20 @@
 .parent {
   width: 100%;
 }
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#move{
+  padding-top: 5px;
+}
+.fa-solid{
+  font-size: 30px;
+}
+.closebtn{
+  font-size: 50px;
+}
 .nav-parent {
   display: flex;
   justify-content: center;
@@ -22,6 +36,7 @@
 }
 .logo-wrap img{
 width:60px;
+height: 59px;
 }
 .menubaricon {
   display: none;
@@ -89,6 +104,7 @@ nav ul li a:hover {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .sidenav a:hover {
