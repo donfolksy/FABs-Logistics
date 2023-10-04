@@ -65,8 +65,8 @@ export default function PickUpGoods() {
                         </Form.Group>
                         
                         
-                        <Button className="Submit mt-4" variant="primary" type="submit">
-                           <a href="/payment">Proceed</a>
+                        <Button className="Submit mt-4" variant="primary" type="submit" href='/payment'>
+                           <p style={{paddingTop:'5px'}}> Proceed</p>
                         </Button>
                     </Form>
                 </Col>

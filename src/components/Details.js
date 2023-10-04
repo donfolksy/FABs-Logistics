@@ -9,7 +9,7 @@ const Details = () => {
       <div className="first-section">
         <div className="senders-details">
           <button className="send">Senders details</button>
-          <div className="name">
+          <div className="phone">
             <p>Name</p>
             <input></input>
           </div>

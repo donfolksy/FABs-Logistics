@@ -80,8 +80,8 @@ export default function HomeDelivery() {
                             <InputGroup.Text>.00</InputGroup.Text>
                         </InputGroup>
 
-                        <Button className="Submit mt-4" variant="primary" type="submit">
-                        <a href="/payment">Proceed</a>
+                        <Button className="Submit mt-4" variant="primary" type="submit" href='/payment'>
+                           <p style={{paddingTop:'5px'}}> Proceed</p>
                         </Button>
                     </Form>
                 </Col>

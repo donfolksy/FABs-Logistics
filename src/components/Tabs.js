@@ -41,7 +41,7 @@ function Tabs() {
                                         <div className="ride-1">
                                            <form action="">
                                                 <label htmlFor="">Travelling From</label>
-                                                <br />
+                                                
                                                 <select name="" id="" placeholder='Departure Terminal'  required>
                                                     <option disabled value="Departure terminal">Departure Terminal</option>
                                                     <option value="">Abia =  Aba</option>
@@ -62,25 +62,26 @@ function Tabs() {
                                                     <option value="">Abia =  Aba</option>
                                                     <option value="">Abia =   Aba</option>
                                                 </select>
-                                                <br />
-                                                <br />
+                                               
 
                                                 <label htmlFor="Travelling to">Travelling to</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Arrival Terminal' />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="departure date">Departure date</label>
-                                                <br />
+                                                
                                                 <input type="date" required />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="Adults">Adults</label>
-                                                <br />
+                                                
                                                 <input type="number" required />
-                                                <br />
-                                                <br />
-                                                <button>Proceed</button>
+                                                
+                                                
+                                                <div className="ride-2">
+                               <button>Proceed</button>
+                               </div>
                                            </form>
                                         </div>
                                     </div>
@@ -92,7 +93,7 @@ function Tabs() {
                                          <div className="ride-1">
                                            <form action="">
                                                 <label htmlFor="">Travelling From</label>
-                                                <br />
+                                                
                                                 <select name="" id="" placeholder='Departure Terminal'  required>
                                                     <option disabled value="Departure terminal">Departure Terminal</option>
                                                     <option value="">Abia =  Aba</option>
@@ -113,25 +114,27 @@ function Tabs() {
                                                     <option value="">Abia =  Aba</option>
                                                     <option value="">Abia =   Aba</option>
                                                 </select>
-                                                <br />
-                                                <br />
+                                                
+                                                
 
                                                 <label htmlFor="Travelling to">Travelling to</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Arrival Terminal' />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="departure date">Departure date</label>
-                                                <br />
+                                                
                                                 <input type="date" required />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="Adults">Adults</label>
-                                                <br />
+                                                
                                                 <input type="number" required />
-                                                <br />
-                                                <br />
-                                                <button>Proceed</button>
+                                                
+                                                
+                                                <div className="ride-2">
+                               <button>Proceed</button>
+                               </div>
                                            </form>
                                         </div>
                                     </div>
@@ -151,65 +154,75 @@ function Tabs() {
   <div className="ride-1">
                                            <form action="">
                                                 <label htmlFor="">Hire From</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Enter departure point'/>
-                                                <br />
-                                                <br />
+                                                
+                                                
 
                                                 <label htmlFor="hire-destination">Hire Destination</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Enter Hire Destination' />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="departure date">Departure date</label>
-                                                <br />
+                                                
                                                 <input type="date" required />
-                                                <br />
-                                                <br />
-                                                <button>Proceed</button>
+                                                
+                                                
+                                                <div className="ride-2">
+                               <button>Proceed</button>
+                               </div>
                                            </form>
                                         </div>
                                         </div>
                                     )}
                                     {innerTabState === 2 && (
                                         <div className="input-section">
-                                           <form action="">
+                                          <div className="ride-1">
+                                          <form action="">
                                                 <label htmlFor="">Hire From</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Enter departure point'/>
-                                                <br />
-                                                <br />
+                                                
+                                                
 
                                                 <label htmlFor="hire-destination">Hire Destination</label>
-                                                <br />
+                                                
                                                 <input type="text" required placeholder='Enter Hire Destination' />
-                                                <br />
-                                                <br />
+                                                
+                                                
                                                 <label htmlFor="departure date">Departure date</label>
-                                                <br />
+                                                
                                                 <input type="date" required />
-                                                <br />
-                                                <br />
+                                                
+                                                
 
                                                 <label htmlFor="return">Return</label>
-                                                <br />
+                                                
                                                 <input type="date" required placeholder='Return date' />
-                                                <br />
-                                                <br />
-                                                <button>Proceed</button>
+                                                
+                                                
+                                                <div className="ride-2">
+                               <button>Proceed</button>
+                               </div>
                                            </form>
+                                          </div>
                                         </div>
                                     )}
                                 </div>
                             </div>
                             <div className={`${outerTabState === 3 ? 'content active-content' : 'content '}`}>
-                               <form action="">
+                              <div className="ride-1">
+                              <form action="">
                                 <label htmlFor="CHeck">Check booking status</label>
-                                <br />
+                                
                                 <input type="text" required placeholder='Enter Refernce Code'/>
-                                <br />
-                                <button>Proceed</button>
+                                
+                               <div className="ride-2">
+                               <button>Proceed</button>
+                               </div>
                                </form>
+                              </div>
                             </div>
                         </div>
                     </div>

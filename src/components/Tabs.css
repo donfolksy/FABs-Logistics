@@ -97,12 +97,67 @@
     width: 100%;
     flex-direction: column;
 }
- form input,select{
+.ride-1 input,select{
     width: 100%;
     display: flex;
     font-size: 20px;
-    border-radius: 15px;
-    padding: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+.ride-1 button{
+    background-color: #C7FE28;
+    color: #000;
+    border: 1px solid #C7FE28;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.ride-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+.ride-1 label{
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+@media (max-width:500px){
+    .tab {
+        color: #000;
+        padding: 9px;
+        text-align: center;
+        border-top: none;
+        cursor: pointer;
+        position: relative;
+        /* color: #FFF; */
+        font-family: Caveat Brush;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      
+      .active-tab::after {
+        border-bottom: 2px solid #000;
+        border-radius: 0px;
+        content: "";
+        position: absolute;
+        top: -24%;
+        left: 50%;
+        padding-bottom: 5rem;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: initial;
+        animation: new 0.5s;
+        transform: translate(-50%,-50%);
+      }
 }
 
 
