@@ -1,5 +1,5 @@
 import Modal from 'react-bootstrap/Modal';
-// import { Modal } from 'react-bootstrap';
+
 const BookNowModal = () => {
  
     return(

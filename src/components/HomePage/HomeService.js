@@ -3,9 +3,8 @@ import bicycle from "../../images/bicycle.png"
 import car from "../../images/car.png"
 import box from "../../images/box.png"
 import { Link } from "react-router-dom";
-// import truck from "../../images/truck.png"
-
 import PickUpModal from '../pick-up/PickUpModal'
+import ProtectedRoute from "../Auth/ProtectedRoute";
 
 const HomeService = () => {
 
@@ -34,13 +33,7 @@ const HomeService = () => {
       modal: <PickUpModal />
     },
 
-    // {
-    //     icons: truck,
-    //     heading: "Express Delivery",
-    //     text: "Technology and its application are fundamental at Fabs logistics. We understand the role of technology in providing an exceptional customer experience. For this reason, our processes, products and services are built around modern technology to help us deliver your shipments cheaper, safely and at the speed of light..",
-    //     button: "<button>SEND GOODS</>.",
-
-    //   }, 
+    
   ];
   return (
     <div className="d-flex flex-column justify-content-center w-100 parent-service ">
@@ -59,7 +52,9 @@ const HomeService = () => {
                 {
                   !button ?
                     modal :
+                   
                     <Link to={`/${link}`} className="services-btn p-2">{button}</Link>
+                    
                 }
               </div>
             </div>
